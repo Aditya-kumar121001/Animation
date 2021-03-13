@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+#clouds{
+    animation: slide-left 5s linear infinite alternate-reverse both;
+}
+@keyframes slide-left {
+    0% {
+      
+              transform: translateX(0);
+    }
+    100% {
+      
+              transform: translateX(-50px);
+    }
+}
+
+#leafs{
+    animation: move 3s infinite alternate-reverse;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes move
+{
+    0%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(5deg);
+    }
+}
+#hair{
+    animation: move 2s linear infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes move
+{
+    0%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+}
